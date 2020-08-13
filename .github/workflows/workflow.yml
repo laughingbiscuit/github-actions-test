@@ -1,0 +1,10 @@
+name: My Workflow
+on: push
+
+jobs:
+  test:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: run tests
+      run: sh test.sh
