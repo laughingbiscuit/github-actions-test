@@ -13,4 +13,4 @@ jobs:
     - name: run tests
       run: ./test.sh
     - name: run docker
-      run: docker run -it alpine:latest ls
+      run: docker run alpine:latest ls
