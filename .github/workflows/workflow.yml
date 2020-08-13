@@ -14,3 +14,10 @@ jobs:
       run: ./test.sh
     - name: run docker
       run: docker run alpine:latest ls
+    - name: write some content
+      run: echo "<h1>hello world</h1>" > ./public/index.html
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
