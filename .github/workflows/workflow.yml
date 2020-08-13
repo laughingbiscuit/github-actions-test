@@ -6,6 +6,8 @@ jobs:
     name: Integration Tests
     runs-on: ubuntu-latest
     steps:
+    - name: checkout code
+      uses: actions/checkout@v2
     - name: figure out dir
       run: ls -al
     - name: run tests
