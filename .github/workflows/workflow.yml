@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: figure out dir
-      run: pwd
+      run: ls -al
     - name: run tests
-      run: sh ./test.sh
+      run: ./test.sh
