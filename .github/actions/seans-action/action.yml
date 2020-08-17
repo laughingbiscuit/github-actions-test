@@ -1,0 +1,4 @@
+name: Seans Action
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
