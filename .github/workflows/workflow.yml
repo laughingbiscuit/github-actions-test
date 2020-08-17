@@ -31,3 +31,7 @@ jobs:
       uses: ./.github/actions/seans-action
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: run my action somewhere else
+      uses: ./projects/seans-action
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

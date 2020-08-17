@@ -1,0 +1,8 @@
+name: Seans Action
+inputs:
+  github-token:
+    description: Github Token
+    required: true 
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
