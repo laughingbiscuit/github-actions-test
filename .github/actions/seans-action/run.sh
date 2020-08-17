@@ -2,6 +2,6 @@
 
 set -e
 
-[[ ! -z "$GITHUB_TOKEN" ]] && echo "token present" || echo "token missing"
+[[ ! -z "$INPUT_GITHUB-TOKEN" ]] && echo "token present" || echo "token missing"
 ls /github/workspace/
 
