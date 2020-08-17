@@ -28,4 +28,4 @@ jobs:
     - name: checkout code
       uses: actions/checkout@v2
     - name: run my action
-      uses: actions/seans-action
+      uses: ./.github/actions/seans-action
